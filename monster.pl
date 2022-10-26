@@ -9,34 +9,38 @@ basicType(normal).
 monster(chewtle, water). % Chewtle
 monster(pansage, grass). % Pansage
 monster(rapidash, fire). % Rapidash
-monster(shuppet, ghost).
-monster(wooloo, normal).
+monster(shuppet, ghost). % Shuppet
+monster(wooloo, normal). % Wooloo
 
-%% Moves
 
-%  Moves
+/* Moves */
+
+%  Water
 move(waterGun, water).
 move(hydroPump, water).
+
+% Normal
 move(headButt, normal).
-
 move(tackle, normal).
-
-move(lick, ghost).
-move(sunnyDay, fire).
-move(seedBomb, grass).
-
-move(flameCharge, fire).
 move(quickAttack, normal).
-move(overheat, fire).
-
-move(hex, ghost).
-move(shadowBall, ghost).
 move(screech, normal).
-
-move(grassySlide, grass).
 move(stomp, normal).
 
-%% Monster's moves
+% Ghost
+move(lick, ghost).
+move(hex, ghost).
+move(shadowBall, ghost).
+
+% Fire
+move(sunnyDay, fire).
+move(flameCharge, fire).
+move(overheat, fire).
+
+% Grass
+move(seedBomb, grass).
+move(grassySlide, grass).
+
+/* Monster moves */
 
 % Chewtle
 monsterMove(chewtle, waterGun).
@@ -107,6 +111,5 @@ typeEffectiveness(normal, grass, ordinary).
 typeEffectiveness(normal, water, ordinary).
 typeEffectiveness(normal, normal, ordinary).
 
-
-
 /* ------------------------------------------------------------- */
+
