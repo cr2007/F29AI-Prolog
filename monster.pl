@@ -120,3 +120,8 @@ moreEffective(weak, superweak).
 
 /* ------------------------------------------------------------- */
 
+/* Rules */
+
+/* Transitive Effectiveness */
+moreEffectiveThan(E1, E2) :- moreEffective(E1, E2).
+
