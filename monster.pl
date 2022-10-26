@@ -15,7 +15,9 @@ monster(wooloo, normal). % Wooloo
 
 /* Moves */
 
-%  Water
+%% move(move, type)
+
+% Water
 move(waterGun, water).
 move(hydroPump, water).
 
@@ -40,7 +42,10 @@ move(overheat, fire).
 move(seedBomb, grass).
 move(grassySlide, grass).
 
+
 /* Monster moves */
+
+%% monsterMove(monster, move)
 
 % Chewtle
 monsterMove(chewtle, waterGun).
@@ -74,7 +79,7 @@ monsterMove(wooloo, stomp).
 
 /* Type Effectiveness */
 
-% typeEffectiveness(t1, t2, e)
+%% typeEffectiveness(t1, t2, e)
 
 % Fire
 typeEffectiveness(fire, fire, weak).
