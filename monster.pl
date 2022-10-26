@@ -111,5 +111,12 @@ typeEffectiveness(normal, grass, ordinary).
 typeEffectiveness(normal, water, ordinary).
 typeEffectiveness(normal, normal, ordinary).
 
+
+/* Basic Effectiveness Relationships */
+
+moreEffective(strong, ordinary).
+moreEffective(ordinary, weak).
+moreEffective(weak, superweak).
+
 /* ------------------------------------------------------------- */
 
