@@ -134,3 +134,14 @@ moreEffectiveThan(E1, E2) :- moreEffective(E1, E3), moreEffectiveThan(E3, E2).
 
 /* Monster and Move Type Match Rule */
 monsterMoveTypeMatch(MV, MO) :- monsterMove(MO, MV), move(MV, MT), monster(MO, MT).
+
+
+/* Move MV1 is more effective than move MV2 against monsters of type T */
+
+moreEffectiveTypeMove(T, MV1, MV2) :-
+    move(MV1, T1),                 % Move MV1 is of type T
+    move(MV2, T2),                 % Move MV2 is of type T
+    typeEffectiveness(T1, T, E1),  % Move of Type T1 against monsters of type T has effectiveness E1
+    typeEffectiveness(T2, T, E2),  % Move of Type T2 against monsters of type T has effectiveness E2
+    moreEffectiveThan(E1, E2).         % E1 is more effective than E2
+
