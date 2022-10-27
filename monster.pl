@@ -130,5 +130,7 @@ moreEffective(weak, superweak).
 /* Transitive Effectiveness Rule */
 moreEffectiveThan(E1, E2) :- moreEffective(E1, E2).
 
+moreEffectiveThan(E1, E2) :- moreEffective(E1, E3), moreEffectiveThan(E3, E2).
+
 /* Monster and Move Type Match Rule */
 monsterMoveTypeMatch(MV, MO) :- monsterMove(MO, MV), move(MV, MT), monster(MO, MT).
