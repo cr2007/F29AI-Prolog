@@ -145,3 +145,20 @@ moreEffectiveTypeMove(T, MV1, MV2) :-
     typeEffectiveness(T2, T, E2),  % Move of Type T2 against monsters of type T has effectiveness E2
     moreEffectiveThan(E1, E2).         % E1 is more effective than E2
 
+
+/* Move MV1 is more effective against MO2 than MV2 against MO1 */
+moreEffectiveMonsterMove(MO1, MO2, MV1, MV2) :- 
+    monsterMove(MO1, MV1),!,          % Move MV1 is a move of monster MO1
+    monsterMove(MO2, MV2),!,          % Move MV1 is a move of monster MO1
+
+
+    move(MV1, MVT1),                  % Move MV1 is of type T1
+    move(MV2, MVT2),                  % Move MV2 is of type T2
+    
+    monster(MO1, MT1),                % Monster MO1 is of type T1
+    monster(MO2, MT2),                % Monster MO2 is of type T2
+
+    typeEffectiveness(MVT1, MT2, E1), % Checks Effectiveness
+    typeEffectiveness(MVT2, MT1, E2), % Checks Effectiveness
+
+    moreEffectiveThan(E1, E2).        % Compares Effectiveness
