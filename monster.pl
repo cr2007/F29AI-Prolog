@@ -88,38 +88,38 @@ monsterMove(wooloo, stomp).
 %% typeEffectiveness(t1, t2, e)
 
 % Fire
-typeEffectiveness(fire, fire, weak).         % Fire Move vs Fire Monster = Weak
-typeEffectiveness(fire, ghost, ordinary).    % Fire Move vs Ghost Monster = Ordinary
-typeEffectiveness(fire, grass, strong).      % Fire Move vs Grass Monster = Strong
-typeEffectiveness(fire, water, weak).        % Fire Move vs Water Monster = Weak
+typeEffectiveness(fire, fire, weak).         % Fire Move vs Fire Monster   = Weak
+typeEffectiveness(fire, ghost, ordinary).    % Fire Move vs Ghost Monster  = Ordinary
+typeEffectiveness(fire, grass, strong).      % Fire Move vs Grass Monster  = Strong
+typeEffectiveness(fire, water, weak).        % Fire Move vs Water Monster  = Weak
 typeEffectiveness(fire, normal, ordinary).   % Fire Move vs Normal Monster = Ordinary
 
 % Ghost
-typeEffectiveness(ghost, fire, ordinary).    % Ghost Move vs Fire Monster = Ordinary
-typeEffectiveness(ghost, ghost, strong).     % Ghost Move vs Ghost Monster = Strong
-typeEffectiveness(ghost, grass, ordinary).   % Ghost Move vs Grass Monster = Ordinary
-typeEffectiveness(ghost, water, ordinary).   % Ghost Move vs Water Monster = Ordinary
+typeEffectiveness(ghost, fire, ordinary).    % Ghost Move vs Fire Monster   = Ordinary
+typeEffectiveness(ghost, ghost, strong).     % Ghost Move vs Ghost Monster  = Strong
+typeEffectiveness(ghost, grass, ordinary).   % Ghost Move vs Grass Monster  = Ordinary
+typeEffectiveness(ghost, water, ordinary).   % Ghost Move vs Water Monster  = Ordinary
 typeEffectiveness(ghost, normal, superweak). % Ghost Move vs Normal Monster = Super Weak
 
 % Grass
-typeEffectiveness(grass, fire, weak).        % Grass Move vs Fire Monster = Weak
-typeEffectiveness(grass, ghost, ordinary).   % Grass Move vs Ghost Monster = Ordinary
-typeEffectiveness(grass, grass, weak).       % Grass Move vs Grass Monster = Weak
-typeEffectiveness(grass, water, strong).     % Grass Move vs Water Monster = Strong
+typeEffectiveness(grass, fire, weak).        % Grass Move vs Fire Monster   = Weak
+typeEffectiveness(grass, ghost, ordinary).   % Grass Move vs Ghost Monster  = Ordinary
+typeEffectiveness(grass, grass, weak).       % Grass Move vs Grass Monster  = Weak
+typeEffectiveness(grass, water, strong).     % Grass Move vs Water Monster  = Strong
 typeEffectiveness(grass, normal, ordinary).  % Grass Move vs Normal Monster = Ordinary
 
 % Water
-typeEffectiveness(water, fire, strong).      % Water Move vs Fire Monster = Strong
-typeEffectiveness(water, ghost, ordinary).   % Water Move vs Ghost Monster = Ordinary
-typeEffectiveness(water, grass, weak).       % Water Move vs Grass Monster = Weak
-typeEffectiveness(water, water, weak).       % Water Move vs Water Monster = Weak
+typeEffectiveness(water, fire, strong).      % Water Move vs Fire Monster   = Strong
+typeEffectiveness(water, ghost, ordinary).   % Water Move vs Ghost Monster  = Ordinary
+typeEffectiveness(water, grass, weak).       % Water Move vs Grass Monster  = Weak
+typeEffectiveness(water, water, weak).       % Water Move vs Water Monster  = Weak
 typeEffectiveness(water, normal, ordinary).  % Water Move vs Normal Monster = Ordinary
 
 % Normal
-typeEffectiveness(normal, fire, ordinary).   % Normal Move vs Fire Monster = Ordinary
-typeEffectiveness(normal, ghost, superweak). % Normal Move vs Ghost Monster = Super Weak
-typeEffectiveness(normal, grass, ordinary).  % Normal Move vs Grass Monster = Ordinary
-typeEffectiveness(normal, water, ordinary).  % Normal Move vs Water Monster = Ordinary
+typeEffectiveness(normal, fire, ordinary).   % Normal Move vs Fire Monster   = Ordinary
+typeEffectiveness(normal, ghost, superweak). % Normal Move vs Ghost Monster  = Super Weak
+typeEffectiveness(normal, grass, ordinary).  % Normal Move vs Grass Monster  = Ordinary
+typeEffectiveness(normal, water, ordinary).  % Normal Move vs Water Monster  = Ordinary
 typeEffectiveness(normal, normal, ordinary). % Normal Move vs Normal Monster = Ordinary
 
 
@@ -127,9 +127,9 @@ typeEffectiveness(normal, normal, ordinary). % Normal Move vs Normal Monster = O
 
 %% moreEffective(e1, e2)
 
-moreEffective(strong, ordinary). % Strong > Ordinary
+moreEffective(strong, ordinary). % Strong   > Ordinary
 moreEffective(ordinary, weak).   % Ordinary > Weak
-moreEffective(weak, superweak).  % Weak > Superweak
+moreEffective(weak, superweak).  % Weak     > Superweak
 
 /* ------------------------------------------------------------- */
 
