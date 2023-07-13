@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "rebornix.prolog",
-        "vscode-icons-team.vscode-icons"
+        "vscode-icons-team.vscode-icons",
+        "eamodio.gitlens"
     ]
 }

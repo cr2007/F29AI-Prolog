@@ -4,9 +4,10 @@
     "customizations": {
         "vscode": {
             "extensions": [
-				"rebornix.prolog",
-				"vscode-icons-team.vscode-icons"
-			]
+                "rebornix.prolog",
+                "vscode-icons-team.vscode-icons",
+                "eamodio.gitlens"
+            ]
         }
     },
     "initializeCommand": "sudo apt update ; sudo apt upgrade -y",
