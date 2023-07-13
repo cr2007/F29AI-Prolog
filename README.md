@@ -1,5 +1,7 @@
 # F29AI - CW1
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/cr2007/F29AI-Prolog)
+
 ## Artificial Intelligence and Intelligent Agents
 
 ### Knowledge Representation problem description
