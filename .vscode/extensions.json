@@ -2,6 +2,7 @@
 	"recommendations": [
 		"rebornix.prolog",
 		"vscode-icons-team.vscode-icons",
-		"eamodio.gitlens"
+		"eamodio.gitlens",
+		"ms-azuretools.vscode-docker"
 	]
 }
