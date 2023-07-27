@@ -1,20 +1,20 @@
 {
-    "name": "Prolog Container",
-    // "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    "build":{
-        "dockerfile": "Dockerfile"
-    },
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "rebornix.prolog",
-                "vscode-icons-team.vscode-icons",
-                "eamodio.gitlens",
-                "ms-azuretools.vscode-docker"
-            ]
-        }
-    }
+	"name": "Prolog Container",
+	// "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"build":{
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rebornix.prolog",
+				"vscode-icons-team.vscode-icons",
+				"eamodio.gitlens",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
 
-    // "initializeCommand": "sudo apt update ; sudo apt upgrade -y",
-    // "onCreateCommand": "sudo apt-get install software-properties-common -y ; sudo apt-add-repository ppa:swi-prolog/stable -y ; sudo apt-get update ; sudo apt-get install swi-prolog -y"
+	// "initializeCommand": "sudo apt update ; sudo apt upgrade -y",
+	// "onCreateCommand": "sudo apt-get install software-properties-common -y ; sudo apt-add-repository ppa:swi-prolog/stable -y ; sudo apt-get update ; sudo apt-get install swi-prolog -y"
 }

@@ -151,27 +151,27 @@ monsterMoveTypeMatch(MV, MO) :- monsterMove(MO, MV), move(MV, MT), monster(MO, M
 /* Move MV1 is more effective than move MV2 against monsters of type T */
 
 moreEffectiveTypeMove(T, MV1, MV2) :-
-    move(MV1, T1),                 % Move MV1 is of type T
-    move(MV2, T2),                 % Move MV2 is of type T
-    typeEffectiveness(T1, T, E1),  % Move of Type T1 against monsters of type T has effectiveness E1
-    typeEffectiveness(T2, T, E2),  % Move of Type T2 against monsters of type T has effectiveness E2
-    moreEffectiveThan(E1, E2).     % E1 is more effective than E2
+	move(MV1, T1),                 % Move MV1 is of type T
+	move(MV2, T2),                 % Move MV2 is of type T
+	typeEffectiveness(T1, T, E1),  % Move of Type T1 against monsters of type T has effectiveness E1
+	typeEffectiveness(T2, T, E2),  % Move of Type T2 against monsters of type T has effectiveness E2
+	moreEffectiveThan(E1, E2).     % E1 is more effective than E2
 
 
 /* Move MV1 is more effective against MO2 than MV2 against MO1 */
 moreEffectiveMonsterMove(MO1, MO2, MV1, MV2) :-
-    /* Checks if the Monster has the move specified
-       else it doesn't continue with the sequence */
-    monsterMove(MO1, MV1),!,          % Move MV1 is a move of monster MO1
-    monsterMove(MO2, MV2),!,          % Move MV1 is a move of monster MO1
+	/* Checks if the Monster has the move specified
+	   else it doesn't continue with the sequence */
+	monsterMove(MO1, MV1),!,          % Move MV1 is a move of monster MO1
+	monsterMove(MO2, MV2),!,          % Move MV1 is a move of monster MO1
 
-    move(MV1, MVT1),                  % Move MV1 is of type T1
-    move(MV2, MVT2),                  % Move MV2 is of type T2
+	move(MV1, MVT1),                  % Move MV1 is of type T1
+	move(MV2, MVT2),                  % Move MV2 is of type T2
 
-    monster(MO1, MT1),                % Monster MO1 is of type T1
-    monster(MO2, MT2),                % Monster MO2 is of type T2
+	monster(MO1, MT1),                % Monster MO1 is of type T1
+	monster(MO2, MT2),                % Monster MO2 is of type T2
 
-    typeEffectiveness(MVT1, MT2, E1), % Checks Effectiveness
-    typeEffectiveness(MVT2, MT1, E2), % Checks Effectiveness
+	typeEffectiveness(MVT1, MT2, E1), % Checks Effectiveness
+	typeEffectiveness(MVT2, MT1, E2), % Checks Effectiveness
 
-    moreEffectiveThan(E1, E2).        % Compares Effectiveness
+	moreEffectiveThan(E1, E2).        % Compares Effectiveness

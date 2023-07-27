@@ -18,7 +18,3 @@ Once you enter the Prolog shell, load the program:
 ```
 
 And then from there, enter your queries.
-
-
-
-
