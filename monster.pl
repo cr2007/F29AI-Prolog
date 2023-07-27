@@ -159,7 +159,7 @@ moreEffectiveTypeMove(T, MV1, MV2) :-
 
 
 /* Move MV1 is more effective against MO2 than MV2 against MO1 */
-moreEffectiveMonsterMove(MO1, MO2, MV1, MV2) :- 
+moreEffectiveMonsterMove(MO1, MO2, MV1, MV2) :-
     /* Checks if the Monster has the move specified
        else it doesn't continue with the sequence */
     monsterMove(MO1, MV1),!,          % Move MV1 is a move of monster MO1
